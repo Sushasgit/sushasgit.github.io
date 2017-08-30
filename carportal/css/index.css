@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font:400 18px 'Questrial', sans-serif;
+}
+.top-menu{
+    position: relative;
+}
+ .navbar-light .navbar-nav .nav-link{
+    color:#ff6666;
+}
+
+.container-promo-video{
+    padding:0;
+}
+.container-promo-video__item{
+    position: relative;
+    width: 100%;
+}
+.container-promo-video__text{
+    position: absolute;
+    z-index: 20;
+    font-size: 24px;
+    padding: 8% 5%;
+    top: 0;
+}
+.container-promo-video__headline{
+    font-family: 'Alfa Slab One', cursive;
+    animation: leFlyInRight 2s ease-in-out ;
+    font-size: 50px;
+    color: #ffffff;
+}
+h2{
+    font-family: 'Alfa Slab One', cursive;
+    animation: leFlyInRight 2s ease-in-out ;
+}
+.container-promo-video__adv{
+    animation: leFlyInRight 2s ease-in-out;
+    animation-delay: 2s;
+}
+
+.container-promo-video__adv,.container-promo-video__btn{
+    color:#ffffff;
+}
+.latest-news{
+    position: relative;
+}
+.container-video{
+    position: relative;
+}
+.search-car-container{
+    margin-top: 3%;
+}
+.search-car__headline,.top-car__headline,.latest-news__headline{
+    margin-top: 3%;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    margin-bottom: 5%;
+}
+input[type=checkbox], input[type=radio] {
+    margin-right: 4px;
+}
+.our-advantages .row{
+    text-align: center;
+}
+.background-container{
+    background-color:#ff6666 ;
+    padding: 2%;
+    margin-top: 5%;
+}
+.search-btn{
+    margin-top:5%;
+    margin-bottom: 5%;
+    width: 50%;
+}
+#subscribe-btn{
+    color: #ffffff;
+}
+.container-count__num{
+    font-size: 60px;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    color:#595959;
+}
+.container-count{
+    border-right: 1px solid #595959;
+}
+.container-count:first-child{
+    border-left: 1px solid #595959;
+}
+.about-us img{
+    width:100%;
+}
+#btn-scroll-up{
+    display: none;
+    border:none;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    background-color: transparent;
+}
+.nav-link{
+   color:#ffffff;
+}
+footer{
+    margin-top: 5%;
+}
+@keyframes leFlyInRight {
+    0% {
+        transform: translate(40px, 0px);
+        opacity: 0;
+    }
+    50% { transform: translate(-40px, 0px) }
+}
+@media screen and (max-width: 860px) {
+    .container-promo-video__adv,.container-promo-video__btn{
+        color:#ffffff;
+        font-size: 16px;
+    }
+    .container-promo-video__headline{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 460px){
+    .container-promo-video__headline{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 765px){
+    .container-count{
+        border-left: 1px solid #595959;
+    }
+}
+

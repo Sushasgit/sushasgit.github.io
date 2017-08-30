@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light top-menu">
+        <a class="navbar-brand" href="#">Car Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-video">
+        <div class="col-md-12 container-promo-video">
+            <video class="container-promo-video__item" poster="img/redcorvette.jpg" src="video/Drag%20race.mp4"
+                   type="video/mp4" autoplay loop></video>
+            <div class=" col-md-6 container-promo-video__text">
+                <h1 class="container-promo-video__headline">2017 Chevrolet Corvette</h1>
+                <p class="container-promo-video__adv">2017 Corvette Grand Sport adopts the strategy of borrowing suspension
+                    components and wider wheels and
+                    tires from a burlier variant and mixing them with the standard V-8 engine option.</p>
+                <button type="button" class="container-promo-video__btn btn btn-danger btn-lg text-center">Learn more
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div id="search" class="container search-car-container">
+        <div class="row">
+            <div class=" col-lg-5 col-md-12 col-sm-12">
+                <form class="search-car">
+                    <h3 class="search-car__headline">Search</h3>
+                    <h3 class="search-car"></h3>
+                    <div class="form-group">
+                        <label for="inputSearch" class="col-form-label">Search</label>
+                        <input type="text" class="form-control" id="inputSearch" placeholder="Search">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity" class="col-form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState" class="col-form-label">State</label>
+                            <select id="inputState" class="form-control">Choose</select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip" class="col-form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Hatchback
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">Sedan
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">Crossover
+                        </label>
+                    </div>
+                </form>
+                <button type="submit" class="btn btn-danger btn-lg search-btn">Search</button>
+                <div class="card text-center">
+                    <div class="card-header">
+                        Additional Services
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">If you'd like to receieve updates subscribe below </p>
+                        <a id="subscribe-btn" class="btn btn-danger">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="get-email" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Enter your email</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-7 col-md-12 col-sm-12">
+                <h3 class="top-car__headline">2017 Best Cars</h3>
+                <div class="card-group top-car">
+                    <div class="card">
+                        <img class="card-img-top" src="img/car2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">2019 Audi R8  Sportback spy shots</h4>
+                            <p class="card-text">Audi Sport upgrades will include unique aero elements, uprated brakes
+                                (including available carbon-ceramic units), available magnetic ride control suspension,
+                                and carbon fiber elements. All of this should result in a 0-60 mph time of under 4.0 seconds.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/car1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">HONDA S660 CONCEPT</h4>
+                            <p class="card-text">Cornering senior designer Ryo Sugiura at the preview event in Tokyo,
+                                we learn that the S660 will land in showrooms by 2015 pretty much as-is. That’s good,
+                                because we think it’s a real looker. “The only addition will be a fully retractable
+                                roof which you don’t see on the concept,” he says..</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/car3.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title"> BMW i8 Series concept</h4>
+                            <p class="card-text">President BMW M Division said, "The conception and development of
+                                the standard BMW 8 Series and the M model run in parallel." This early prototype of
+                                the future BMW M8 was unveiled during a driving presentation as part of the support
+                                programme for the Nurburgring 24-hour race.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="counter" class="background-container">
+        <div class="container our-advantages">
+            <div class="row">
+                <div class="col-md-3 container-count">
+                    <span class="container-count__num">26</span>
+                    <p class="container-count__text">Lorem ipsum dolor sit amet, consectetur </p>
+                </div>
+                <div class="col-md-3 container-count">
+                    <span class="container-count__num">400</span>
+                    <p class="container-count__text">Lorem ipsum dolor sit amet, consectetur </p>
+                </div>
+                <div class="col-md-3 container-count">
+                    <span class="container-count__num">3000</span>
+                    <p class="container-count__text">Lorem ipsum dolor sit amet, consectetur </p>
+                </div>
+                <div class="col-md-3 container-count">
+                    <span id="we" class="container-count__num">17</span>
+                    <p class="container-count__text">Lorem ipsum dolor sit amet, consectetur </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="latest-news">
+        <h3 class="latest-news__headline">Latest News</h3>
+        <div class="card-columns">
+            <div class="card p-3">
+                <blockquote class="blockquote mb-0 card-body">
+                    <p>A racing car is an animal with a thousand adjustments. </p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+                            Mario Andretti
+                        </small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/red-car.jpg" alt="cars-image">
+                <div class="card-body">
+                    <h4 class="card-title">What Car? deals of the week</h4>
+                    <p class="card-text">Thousands of pounds of savings on SUVs, large and small. These are exclusive to
+                        What
+                        Car? readers and valid until 17 August 2017</p>
+                    <a href="#" class="btn btn-danger">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/red-bmw.jpg" alt="cars-image">
+                <div class="card-body">
+                    <h4 class="card-title">New 2018 BMW i8 Roadster officially teased</h4>
+                    <p class="card-text">BMW's electrified drop-top sports car will be the third member of the
+                        'i' family, and has been teased for the
+                    </p>
+                    <a href="#" class="btn btn-danger">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/car-tracker.jpg" alt="cars-image">
+                <div class="card-body">
+                    <h4 class="card-title">Best used hot hatches for less than £5000 (and the ones to avoid)</h4>
+                    <p class="card-text">Excitement and practicality all wrapped up in one perfect package – and these hot
+                        hatches can be yours for less than £5000, </p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                    <a href="#" class="btn btn-danger">Read more</a>
+                </div>
+            </div>
+            <div class="card bg-danger p-3 text-center">
+                <blockquote class="blockquote mb-0">
+                    <p>
+                        A man who has never gone to school may steal from a freight car; but if he has a university
+                        education,
+                        he may steal the whole railroad.
+                    </p>
+                    <a href="#" class="btn btn-danger">Read more</a>
+                    <footer class="blockquote-footer">
+                        <small>
+                            Theodore Roosevelt
+                        </small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h4 class="card-title">Seven things we learned from Toyota and Mazda's alliance announcement</h4>
+                    <p class="card-text">The team-up has led to a flurry of announcements on the partnership's purpose,
+                        including joint EV tech development, a new factory in the US and a whole host of juicy product
+                        details.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                    <a href="#" class="btn btn-danger">Read more</a>
+                </div>
+            </div>
+
+            <div class="card p-3 text-right">
+                <blockquote class="blockquote mb-0">
+                    <p>“Money may not buy happiness, but I'd rather cry in a Jaguar than on a bus.”
+                    </p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+                            Françoise Sagan
+                        </small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card">
+                <img class="card-img" src="img/car-red2.jpg" alt="cars-image">
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">2017 Concours Of Elegance: Full car list revealed</h4>
+                    <p class="card-text"> The full list of exclusive and exotic classic cars for the 2017 Concours Of
+                        Elegance
+                        at Hampton Court Palace in the UK, has been released. Featuring over 60 cars dating from the first
+                        automobile to receive a speeding ticket - the 1896 Arnold Benz Motor Carriage - to present-day
+                        hypercars
+                        like the 2017 McLaren P1 GTR (above)...</p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                    <a href="#" class="btn btn-danger">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">2017 Toyota 86 Automatic: A New Name Singing the Same Old Song</h4>
+                    <p class="card-text"> Changing the name did not change the character of the Toyota 86, the sports coupe
+                        first introduced in the United States as the Scion FR-S and a twin to the Subaru BRZ. So we’ll go
+                        ahead
+                        and sound like a broken record,having already said over and over again: “Great balance and fantastic
+                        steering, but it needs more power. Turbocharge it.” The relative lack of power has been the main
+                        point
+                        of discussion since the car was announced.</p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                    <a href="#" class="btn btn-danger">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <nav class="navbar navbar-light bg-danger justify-content-around">
+            <span>&#9400; Car Portal 2017</span>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Privacy Policy </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <button id="btn-scroll-up">
+        <svg version="1.1" id="arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+             width="50px" height="50px" viewBox="0 0 963 963" style="enable-background:new 0 0 963 963;" xml:space="preserve" fill="#dc3545">
+             <path d="M481.5,963C747.4,963,963,747.4,963,481.5C963,215.6,747.4,0,481.5,0C215.6,0,0,215.6,0,481.5C0,747.4,215.6,963,481.5,963
+             z M543.3,271.4l233.2,213.401c19.4,17.799,29.2,42.1,29.2,66.398c0,21.701-7.8,43.5-23.601,60.701
+             C748.5,648.6,691.6,651.1,654.9,617.5L482.6,459.8L305.3,622.4c-36.6,33.6-93.6,31.1-127.2-5.5s-31.1-93.6,5.5-127.201L421.7,271.4
+             C456.2,239.9,508.9,239.9,543.3,271.4z">
+             </path>
+        </svg>
+    </button>
+<script src="bootstrap/js/jquery-slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="bootstrap/js/popover.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
